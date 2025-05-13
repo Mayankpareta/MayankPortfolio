@@ -16,7 +16,7 @@ export default function Home() {
   
     return (
     <div>
-    <div className='pt-20 bg-gradient-to-r from-[#1b010c] to-[#060314] '>
+    <div id='home' className='pt-20 bg-gradient-to-r from-[#1b010c] to-[#060314] '>
       {/*decorative elements*/}
       
        <motion.div

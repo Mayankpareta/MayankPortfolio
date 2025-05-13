@@ -29,7 +29,7 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center  w-32"> 
               <Link to="/" className="flex items-center opacity-100">
                   <img
-                      src='src\images\colorLogo3.png'
+                      src='src\public\images\colorLogo3.png'
                       className=" h-16"
                       alt="Logo"
                   />
@@ -43,8 +43,10 @@ export default function Header() {
                 {navItem.map((item) => (
                     <li key={item.href}>
                         <a 
-                          href={item.href}
-                          className={`relative text-base font-medium px-4 py-2 rounded-full transition-all duration-300
+                        to="about"
+                        
+                        href={item.href}
+                        className={`relative text-base font-medium px-4 py-2 rounded-full transition-all duration-300
                             ${
                               isActive === item.href.replace("#", "") ? 
                               "text-white bg-gradient-to-r from-pink-900 to-indigo-900 dark:from-pink-500 dark:to-indigo-500"

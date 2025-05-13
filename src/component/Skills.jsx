@@ -1,5 +1,6 @@
 import React from 'react';
-import {  } from 'lucide-react'
+import {  } from 'lucide-react';
+
 
 function Skills() {
 
@@ -51,7 +52,7 @@ function Skills() {
 
                   {/* Back-End */}
                     <div className='border border-gray-800 text-white min-h-20 rounded-xl px-5 py-3'>
-                      <span className='text-sm md:text-lg'>Front-End </span>
+                      <span className='text-sm md:text-lg'>Back-End </span>
                       <ul className='grid grid-cols-6 md:grid-cols-3 gap-2 py-2 md:py-2 border-t border-gray-800 '>
                         {BackEndSkillIcons.map((icon) => {
                           return (
@@ -66,7 +67,7 @@ function Skills() {
 
                   {/* Tools */}
                     <div className='border border-gray-800  text-white min-h-20 rounded-xl px-5 py-3'>
-                      <span className='text-sm md:text-lg'>Front-End </span>
+                      <span className='text-sm md:text-lg'>Tools </span>
                       <ul className='grid grid-cols-6 md:grid-cols-3 gap-2 py-2 md:py-2 border-t border-gray-800 '>
                         {toolsSkillIcons.map((icon) => {
                           return (

@@ -3,6 +3,7 @@ import Home from './home/Home';
 import Skills from './Skills';
 import Project from './Project';
 import About from './About';
+import Contact from './contact/contect';
 
 function Content() {
   return (
@@ -11,6 +12,7 @@ function Content() {
       <Skills />
       <Project />
       <About />
+      <Contact />
     </>
   )
 }

@@ -1,7 +1,7 @@
 .hero-image {
     /* Enhanced morphing animation with smoother transitions */
     animation: morph 15s ease-in-out infinite alternate;
-    background-image: url(../../images/owner.jpg);
+    background-image: url(../../public/images/owner.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
