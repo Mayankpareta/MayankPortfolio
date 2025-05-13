@@ -3,7 +3,7 @@ import Home from './home/Home';
 import Skills from './Skills';
 import Project from './Project';
 import About from './About';
-import Contact from './contact/contect';
+import Contact from './contact/Contact';
 
 function Content() {
   return (
