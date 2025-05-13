@@ -20,7 +20,8 @@ function card({link , image , alt , id , title , description}) {
                 <div className='flex justify-center'>
                   <img
                   className=' duration-700 ease-in-out group-hover:scale-105'
-                  src={image}  alt={alt}/>
+                  src={image}  
+                  alt={alt}/>
                 </div>
                 <div className='px-3 py-3'>
                   
