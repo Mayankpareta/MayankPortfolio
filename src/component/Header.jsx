@@ -29,7 +29,7 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center  w-32"> 
               <Link to="/" className="flex items-center opacity-100">
                   <img
-                      src='src/public/images/Logo.png'
+                      src='src/public/Logo.png'
                       className=" h-16"
                       alt="Logo"
                   />

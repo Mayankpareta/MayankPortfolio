@@ -13,7 +13,7 @@ function About() {
               
                 <img 
                 className='w-2/4 md:w-2/4 rounded-xl hover:scale-105 duration-700 ease-in-out'
-                src='src/public/images/ownerdown.jpg'
+                src='src/public/ownerdown.jpg'
                 alt='Owner Image' />
               </div>
               

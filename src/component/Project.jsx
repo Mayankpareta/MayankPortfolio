@@ -14,7 +14,7 @@ const Slider = () => {
    [
     {
       link: 'https://github.com/Mayankpareta/microsoft-project/tree/main/mainFile',
-      image: 'src/public/images/microsoftProject.png',
+      image: 'src/public/microsoftProject.png',
       alt: 'microsoft',
       id: '1',
       title: 'Microsoft',
@@ -22,7 +22,7 @@ const Slider = () => {
     },
     {
       link: 'https://github.com/Mayankpareta/analog-clock',
-      image: 'src/public/images/clockApp.png',
+      image: 'src/public/clockApp.png',
       alt: 'analog clock',
       id: '2',
       title: 'Analog Clock',
@@ -30,7 +30,7 @@ const Slider = () => {
     },
     {
       link: 'https://github.com/Mayankpareta/github',
-      image: 'src/public/images/github.png',
+      image: 'src/public/github.png',
       alt: 'github',
       id: '3',
       title: 'GitHub',
@@ -38,7 +38,7 @@ const Slider = () => {
     },
     {
       link: 'https://github.com/Mayankpareta/weather-app',
-      image: "src/public/images/weatherApp.png",
+      image: "src/public/weatherApp.png",
       alt: 'weatherApp',
       id: '4',
       title: 'Weather App',
