@@ -18,7 +18,7 @@ const Slider = () => {
       alt: 'microsoft',
       id: '1',
       title: 'Microsoft',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.'
+      description: 'Developed an interactive, responsive Microsoft-inspired website using HTML, CSS, and JavaScript. The project focuses on creating a functional website with key interactive elements.'
     },
     {
       link: 'https://github.com/Mayankpareta/analog-clock',
@@ -26,15 +26,15 @@ const Slider = () => {
       alt: 'analog clock',
       id: '2',
       title: 'Analog Clock',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.'
+      description: 'Developed a fully functional analog clock using JavaScript to simulate real-time clock behavior. Implemented CSS for styling the clock face and HTML for structuring the layout.'
     },
     {
-      link: 'https://github.com/Mayankpareta/github',
+      link: 'https://github.com/Mayankpareta/Find-GitHub-User-React',
       image: '/assets/github.png',
       alt: 'github',
       id: '3',
       title: 'GitHub',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.'
+      description: 'A React-based web application that allows users to search for GitHub profiles by username. The app leverages the GitHub API to fetch user data and display relevant information such as profile picture, repositories, followers, following.'
     },
     {
       link: 'https://github.com/Mayankpareta/weather-app',
@@ -42,7 +42,7 @@ const Slider = () => {
       alt: 'weatherApp',
       id: '4',
       title: 'Weather App',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.'
+      description: 'The Weather App is a responsive web application built with HTML, CSS and javaScript that allows users to check the current weather conditions of any city in real-time. '
     }
   ])
 
