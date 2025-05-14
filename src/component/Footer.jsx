@@ -53,17 +53,12 @@ export default function Footer() {
                             About
                         </a>
                         <a
-                            href="#projects"
+                            href="#project"
                             className="text-gray-300 hover:text-white transition-colors duration-300"
                         >
                             Projects
                         </a>
-                        <a
-                            href="#experience"
-                            className="text-gray-300 hover:text-white transition-colors duration-300"
-                        >
-                            Experience
-                        </a>
+                        
                         <a
                             href="#contact"
                             className="text-gray-300 hover:text-white transition-colors duration-300"

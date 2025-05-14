@@ -11,7 +11,6 @@ export default function Header() {
     const navItem = [
         {href: "#home", label: "Home", icon: "home"},
         {href: "#about", label: "About", icon: "about"},
-        {href: "#experience", label: "Experience", icon: "experience"},
         {href: "#project", label: "Project", icon: "project"},
         {href: "#contact", label: "Contact", icon: "contact"},
     ]
