@@ -62,7 +62,7 @@ export default function Home() {
                     pauseDuration={1500}
                     showCursor={true}
                     cursorCharacter=""
-                    className='pt-3 text-xl '
+                    className='pt-3 md:text-xl text-lg'
                   />
                 </div>
 

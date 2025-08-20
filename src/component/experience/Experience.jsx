@@ -38,22 +38,22 @@ function Experience() {
     <div id='experience' className='min-h-60 w-full py-10 lg:pt-0 g-gradient-to-r from-[#222222] to-[#000000]'>
         <div className='w-[90%] mx-auto'>
             {/* title */}
-            <h3 className='text-center text-4xl py-10 text-[#afafaf]'>Experience</h3>
+            <h3 className='text-center text-xl sm:text-4xl py-10 text-[#afafaf]'>Experience</h3>
             <div className=' rounded-xl mt-4 border border-gray-700 shadow-[inset_2px_0px_10px_rgba(256,256,256,0.5)]'>
               <div className='w-11/12 mx-auto py-14'>
               {/*feild and compeny name */}
-                  <h3 className='text-2xl inline border-b pb-0.5 border-blue-400'>Frontend Developer Intern , <span className='text-lg text-[#d8d8d8]'>Comfygen pvt ltd  - Jaipur</span></h3>
+                  <h3 className='text-lg sm:text-2xl inline border-b pb-0.5 border-blue-400'>Frontend Developer Intern , <span className='text-sm sm:text-lg text-[#d8d8d8]'>Comfygen pvt ltd  - Jaipur</span></h3>
                   <p className='text-[15px] text-[#b6b6b6] py-4'>March 2025 - present</p>
                   <div className=''>
                     {/* project details */}
                     {ExperienceProject.map((item, i) => (
                     <div key={i} className='py-2'>
-                        <h2 className='text-xl'>{item.title} 
+                        <h2 className='sm:text-xl text-md'>{item.title} 
                           {/* <a target='_blank' href={item.deployLink} className='text-blue-500 text-[14px] pl-2'>{item.deploy}</a>
                           <a target='_blank' href={item.gitHubLink} className='text-blue-500 text-[14px] pl-5'>{item.gitHub}</a> */}
                         </h2>
                         {/* description */}
-                        <ul className='text-[13px] pl-5 text-[#b6b6b6]'>
+                        <ul className='sm:text-[13px] text-[10px] pl-5 text-[#b6b6b6]'>
                           <li className='py-0.5'>{item.description1}</li>
                           <li className='py-0.5'>{item.description2}</li>
                           <li className='py-0.5'>{item.description3}</li>

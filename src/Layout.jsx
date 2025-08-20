@@ -8,7 +8,7 @@ function Layout({ }) {
 
     return (
         <>
-            <div style={{ width: '100%', height: '287rem', position: 'relative', backgroundColor: '#000000' }}>
+            <div style={{ width: '100%', height: '293rem', position: 'relative', backgroundColor: '#000000' }}>
                 <Particles
                     particleColors={['#ffffff', '#ffffff']}
                     particleCount={800}

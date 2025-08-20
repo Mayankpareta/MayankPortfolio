@@ -5,7 +5,7 @@ function card({link , image , alt , id , title , description}) {
    
 
   return (
-    <div className='w-9/12 mx-auto border border-white/50 shadow-[inset_0px_1px_18px] shadow-white/40 rounded-xl px-12 sm:px-5 lg:px-5 py-12 bg-gradient-to-r from-[#000000] to-[#000000] mb-10'>
+    <div className='w-9/12 mx-auto border border-white/50 shadow-[inset_0px_1px_18px] shadow-white/40 rounded-xl px-2 sm:px-5 py-3 sm:py-12 bg-gradient-to-r from-[#000000] to-[#000000] mb-10'>
         <div>
           <div className='group border border-gray-800 px-4 py-4 rounded-lg'>
               <a key={id} href={link} target='_blank' >                  

@@ -68,7 +68,7 @@ function Skills() {
           // className='grid grid-cols-1 md:grid-cols-3 pt-7 px-2 sm:px-4 lg:px-10 lg:gap-10 gap-5 '
           >
 
-            <div style={{ height: '100px', position: 'relative', overflow: 'hidden' }}>
+            <div  style={{ height: '100px', position: 'relative', overflow: 'hidden' }}>
                 <LogoLoop
                   logos={techLogos}
                   speed={90}
