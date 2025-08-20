@@ -1,5 +1,6 @@
 import React from "react";
-import { Linkedin, Github , Heart, ArrowUp } from "lucide-react";
+import { Heart, ArrowUp } from "lucide-react";
+import { FaTwitter, FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 
 export default function Footer() {
@@ -11,18 +12,17 @@ export default function Footer() {
     };
 
     return (
-        <footer className="relative w-full h-full bg-gradient-to-r from-[#1b010c] to-[#060314] py-12 ">
-           
+        <footer className="relative w-full mt-14 g-gradient-to-r from-[#222222] to-[#000000]  py-12 ">          
 
             {/* Decorative Elements */}
-            <div className="absolute inset-0 overflow-hidden border-t border-gray-800">
-                <div className="absolute -top-16 -left-16 w-32 h-32 bg-purple-600/10 rounded-full blur-xl"></div>
+            {/* <div className="absolute inset-0 overflow-hidden border-t border-gray-800">
+                <div className="absolute -top-16 -left-16 w-32 h-32 bg-gray-700 rounded-full blur-xl"></div>
                 <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-600/10 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-8 right-1/3 w-40 h-40 bg-[#1b0422] rounded-full blur-xl"></div>
-            </div>
+                <div className="absolute -bottom-8 right-1/3 w-40 h-40 bg-gray-800 rounded-full blur-xl"></div>
+            </div> */}
 
             {/* Scroll to top button */}
-            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 ">
                 <button
                     onClick={scrollToTop}
                     className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full shadow-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 group"
@@ -47,18 +47,24 @@ export default function Footer() {
 
                     <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                         <a
-                            href="#about"
+                            href="#experience"
                             className="text-gray-300 hover:text-white transition-colors duration-300"
                         >
-                            About
-                        </a>
+                            Experience
+                        </a>    
                         <a
                             href="#project"
                             className="text-gray-300 hover:text-white transition-colors duration-300"
                         >
                             Projects
+                        </a>    
+                        <a
+                            href="#about"
+                            className="text-gray-300 hover:text-white transition-colors duration-300"
+                        >
+                            About
                         </a>
-                        
+                                               
                         <a
                             href="#contact"
                             className="text-gray-300 hover:text-white transition-colors duration-300"
@@ -81,31 +87,18 @@ export default function Footer() {
                         </span>
                     </div>
 
-                    <div className="flex items-center space-x-4">
-                        {/* <a
-                            aria-label="Email"
-                            href="mayankpareta999@gmail.com"
-                            className="group flex items-center justify-center w-10 h-10 bg-gray-800/50 hover:bg-purple-600 rounded-full transition-all duration-300"
-                        >
-                            <Mail className="w-4 h-4 text-gray-300 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
-                        </a> */}
-                        <a
-                            aria-label="LinkedIn"
-                            target="_blank"
-                            rel="noreferrer"
-                            href="https://www.linkedin.com/in/mayank-pareta-3b5107206/"
-                            className="group flex items-center justify-center w-10 h-10 bg-gray-800/50 hover:bg-blue-600 rounded-full transition-all duration-300"
-                        >
-                            <Linkedin className="w-4 h-4 text-gray-300 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+                    <div className='w-56 flex justify-between pt-10 lg:mx-0 mx-auto'>
+                        <a href='https://x.com/pareta_m' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                            <FaTwitter />
                         </a>
-                        <a
-                            aria-label="GitHub"
-                            target="_blank"
-                            rel="noreferrer"
-                            href="https://github.com/Mayankpareta"
-                            className="group flex items-center justify-center w-10 h-10 bg-gray-800/50 hover:bg-gray-600 rounded-full transition-all duration-300"
-                        >
-                            <Github className="w-4 h-4 text-gray-300 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+                        <a href='https://www.linkedin.com/in/mayank-pareta-3b5107206/' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                            <FaLinkedinIn />
+                        </a>
+                        <a href='https://www.instagram.com/m_k_pareta/' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                            <FaInstagram />
+                        </a>
+                        <a href='https://www.facebook.com/mayank.pareta.18' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                            <FaFacebookF />
                         </a>
                     </div>
                 </div>

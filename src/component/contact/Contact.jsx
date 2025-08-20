@@ -3,13 +3,12 @@ import { MapPin, Phone, Mail, Send, Loader, CheckCircle } from "lucide-react";
 
 function Contact() {
   return (
-    <div id='contact' className='bg-gradient-to-r from-[#1b010c] to-[#060314] py-20 sm:px-5'>
+    <div id='contact' className='g-gradient-to-r from-[#222222] to-[#000000] py-0 lg:py-10 sm:px-5'>
         <div>
-            <h2 className='text-xl sm:text-3xl md:text-4xl text-center text-clip py-10 '><span className='text-[#d15ec6]'>Connect {" "}</span> With Me</h2>
+            <h2 className='text-xl sm:text-3xl text-[#afafaf] md:text-4xl text-center text-clip py-14 '>Connect With Me</h2>
         </div>
-        <div className='flex justify-center'>
-          
-              <div className=" border border-gray-700 rounded-xl w-3/4 sm:w-3/5
+        <div className='flex justify-center'>          
+              <div className="g-gradient-to-r from-[#222222] to-[#000000] shadow-[inset_1px_1px_10px] shadow-white/50 border border-gray-700 rounded-xl mx-2 sm:mx-0 sm:w-5/6
                lg:w-3/5 p-5 lg:p-12 text-white">
                 <div className="h-full flex flex-col">
                   <div className="mb-12">
@@ -22,37 +21,36 @@ function Contact() {
                     </p>
                   </div>
 
-                  <div className="space-y-8 mb-12">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="space-y-8 mb-12 ">
+                    <div className="flex items-center space-x-4 hover:border-b border-blue-600 h-12 pb-1">
+                      <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center ">
                         <MapPin className="w-5 h-5" />
-                          </div>
-                            <div>
-                              <p className="text-sm text-purple-100">
+                      </div>
+                      <div>
+                          <p className="text-sm text-purple-100">
                                   Location
-                              </p>
-                              <p className="font-medium">
+                          </p>
+                          <p className="font-medium">
                                     Kota, Rajasthan, India
-                              </p>
-                            </div>
-                          </div>
+                          </p>
+                      </div>
+                    </div>
 
-                          <div className="flex items-center space-x-4">
-                          <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                    <div className="flex items-center space-x-4 hover:border-b border-blue-600 h-12 pb-1">
+                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                             <Mail className="w-5 h-5" />
-                          </div>
-                          <div>
+                        </div>
+                        <div>
                             <p className="text-sm text-purple-100">
                                 Email
                             </p>
                             <p className="text-xs sm:text-base lg:text-lg">
                               mayankpareta999@gmail.com
                             </p>
-                          </div>
-                          </div>
-
-                          <div className="flex items-center space-x-4">
-                          <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                        </div>
+                    </div>
+                    <div className="flex items-center space-x-4 hover:border-b border-blue-600 h-12 pb-1">
+                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                              <Phone className="w-5 h-5" />
                           </div>
                           <div>

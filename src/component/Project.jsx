@@ -34,7 +34,7 @@ const Slider = () => {
       alt: 'github',
       id: '3',
       title: 'GitHub',
-      description: 'A React-based web application that allows users to search for GitHub profiles by username. The app leverages the GitHub API to fetch user data and display relevant information such as profile picture, repositories, followers, following.'
+      description: 'A React-based web application that allows users to search for GitHub profiles by username. The app leverages the GitHub API to fetch user data and display relevant information.'
     },
     {
       link: 'https://github.com/Mayankpareta/weather-app',
@@ -49,15 +49,16 @@ const Slider = () => {
   
 
   return (
-    <div id='project' className="max-w-full px-2 py-10 lg:px-5 mx-auto bg-gradient-to-r from-[#1b010c] to-[#060314]">
-      <h2 className='text-xl sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7'>Projects</h2>
+    <div id='project' className="px-2 py-14 lg:px-5 g-gradient-to-r from-[#222222] to-[#000000] ">
+      <h2 className='text-xl text-[#afafaf] sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7 pb-10'>Projects</h2>
       <Swiper
+      className=''
         modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         loop={true}
-        spaceBetween={30}
+        spaceBetween={0}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -75,8 +76,7 @@ const Slider = () => {
         
       >
         {card.map((item) => (          
-          <SwiperSlide
-          
+          <SwiperSlide          
           key={item.id}>
             <Card  link={item.link} image={item.image} alt={item.alt} id={item.id} title={item.title} description={item.description}/>
           </SwiperSlide>        

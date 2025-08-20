@@ -1,20 +1,24 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 function About() {
+
+  const isMobile = useMediaQuery({ maxWidth : 1020})
+
   return (
     <div>
-        <div id='about' className='bg-gradient-to-r from-[#1b010c] to-[#060314] min-h-52 py-20'>          
-            <div className='text-center'>
-                <h2 className='text-xl sm:text-2xl pt-4 md:pt-0 text-clip text-[#d15ec6] border-b border-[#e65cd8] inline-block
+        <div id='about'  className='g-gradient-to-r from-[#222222] to-[#000000] min-h-52 lg:py-20 py-5'>          
+            <div className='text-center '>
+                <h2 className='text-xl text-[#afafaf] sm:text-4xl pt-4 md:pt-0 text-clip inline-block
                  '>About Me</h2>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-20 py-20'>
-              <div className='flex justify-center relative items-center group'>
-              
-                <img 
-                className='w-2/4 md:w-2/4 rounded-xl hover:scale-105 duration-700 ease-in-out'
-                src='/assets/ownerdown.jpg'
-                alt='Owner Image' />
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-20 py-10 lg:py-20'>
+               <div
+               className='flex justify-center relative mx-auto items-center group border rounded-xl bg-white w-64 sm:w-[350px] sm:p-4 p-2 shadow-[inset_0px_0px_10px] shadow-black/70'>               
+                    <img 
+                    className='border-2 border-white shadow-2xl shadow-black rounded-xl hover:scale-105 duration-700 ease-in-out'
+                    src={isMobile ? '/assets/owner.jpg' : '/assets/ownerdown.jpg'}
+                    alt='Owner Image' />
               </div>
               
               <div className='px-5'>
