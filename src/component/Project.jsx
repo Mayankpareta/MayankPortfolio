@@ -20,13 +20,21 @@ const Slider = () => {
       title: 'Microsoft',
       description: 'Developed an interactive, responsive Microsoft-inspired website using HTML, CSS, and JavaScript. The project focuses on creating a functional website with key interactive elements.'
     },
+     {
+      link: 'https://github.com/Mayankpareta/Education',
+      image: "/assets/education.png",
+      alt: 'educationApp',
+      id: '4',
+      title: 'Education ',
+      description: 'Next.Js , Developing the UI for a Creative Education platform using Next.js , TypeScript and Tailwind CSS. Built dynamic and responsive components such as course, blog, membership, course, calender... '
+    },
     {
       link: 'https://github.com/Mayankpareta/CRUD_Opration',
       image: '/assets/crudOpration.png',
       alt: 'Crud opration',
       id: '2',
       title: 'Todo Crud Operation',
-      description: 'Implemented token-based login/logout system with JWT and protected routes. Build personal ToDo CRUD features and Forgot Password , Registration functionality.'
+      description: 'React , Implemented token-based login/logout system with JWT and protected routes. Build personal ToDo CRUD features and Forgot Password , Registration functionality.'
     },
     {
       link: 'https://addtocart02.netlify.app/',
@@ -36,14 +44,7 @@ const Slider = () => {
       title: 'Add To Cart',
       description: 'Developed E-commerce "Add to Cart" Feature. The feature allows users to add, remove, and update items in their cart and see the total price , items. Integrated basic product display.' 
     },
-    {
-      link: 'https://github.com/Mayankpareta/weather-app',
-      image: "/assets/education.png",
-      alt: 'educationApp',
-      id: '4',
-      title: 'Education',
-      description: 'Developing the UI for a Creative Education platform using Next.js , TypeScript and Tailwind CSS. Built dynamic and responsive components such as course, blog, membership, course, calender... '
-    }
+   
   ])
 
 
