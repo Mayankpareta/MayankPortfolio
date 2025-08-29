@@ -13,7 +13,7 @@ const Slider = () => {
   const [card , useCard] = useState(
    [
     {
-      link: 'https://github.com/Mayankpareta/microsoft-project/tree/main/mainFile',
+      link: 'https://leafy-pika-a000ae.netlify.app/',
       image: '/assets/microsoftProject.png',
       alt: 'microsoft',
       id: '1',
@@ -21,32 +21,32 @@ const Slider = () => {
       description: 'Developed an interactive, responsive Microsoft-inspired website using HTML, CSS, and JavaScript. The project focuses on creating a functional website with key interactive elements.'
     },
     {
-      link: 'https://github.com/Mayankpareta/analog-clock',
-      image: '/assets/clockApp.png',
-      alt: 'analog clock',
+      link: 'https://github.com/Mayankpareta/CRUD_Opration',
+      image: '/assets/crudOpration.png',
+      alt: 'Crud opration',
       id: '2',
-      title: 'Analog Clock',
-      description: 'Developed a fully functional analog clock using JavaScript to simulate real-time clock behavior. Implemented CSS for styling the clock face and HTML for structuring the layout.'
+      title: 'Todo Crud Operation',
+      description: 'Implemented token-based login/logout system with JWT and protected routes. Build personal ToDo CRUD features and Forgot Password , Registration functionality.'
     },
     {
-      link: 'https://github.com/Mayankpareta/Find-GitHub-User-React',
-      image: '/assets/github.png',
-      alt: 'github',
+      link: 'https://addtocart02.netlify.app/',
+      image: '/assets/addToCart.png',
+      alt: 'Add To Cart',
       id: '3',
-      title: 'GitHub',
-      description: 'A React-based web application that allows users to search for GitHub profiles by username. The app leverages the GitHub API to fetch user data and display relevant information.'
+      title: 'Add To Cart',
+      description: 'Developed E-commerce "Add to Cart" Feature. The feature allows users to add, remove, and update items in their cart and see the total price , items. Integrated basic product display.' 
     },
     {
       link: 'https://github.com/Mayankpareta/weather-app',
-      image: "/assets/weatherApp.png",
-      alt: 'weatherApp',
+      image: "/assets/education.png",
+      alt: 'educationApp',
       id: '4',
-      title: 'Weather App',
-      description: 'The Weather App is a responsive web application built with HTML, CSS and javaScript that allows users to check the current weather conditions of any city in real-time. '
+      title: 'Education',
+      description: 'Developing the UI for a Creative Education platform using Next.js , TypeScript and Tailwind CSS. Built dynamic and responsive components such as course, blog, membership, course, calender... '
     }
   ])
 
-  
+
 
   return (
     <div id='project' className="px-2 py-14 lg:px-5 g-gradient-to-r from-[#222222] to-[#000000] ">
