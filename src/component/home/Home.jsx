@@ -57,7 +57,7 @@ export default function Home() {
                 {/* frontend developer */}
                 <div className='h-10 '>
                   <TextType
-                    text={["Front-End Web Developer", "Next.Js  ,  React.Js  ,  Tailwind Css"]}
+                    text={["Front-End Web Developer", "Next.Js  ,  React.Js  ,  Angular"]}
                     typingSpeed={75}
                     pauseDuration={1500}
                     showCursor={true}
@@ -95,7 +95,7 @@ export default function Home() {
                     </StarBorder>
                   </a>
                 </div>
-                <div className='w-56 flex justify-between pt-10 lg:mx-0 mx-auto'>
+                <div className='w-full md:w-56 flex justify-around md:justify-between md:pt-10 lg:mx-0 mx-auto'>
                   <a href='https://x.com/pareta_m' target='_blank' className='bg-black transition-all duration-300 rounded-full hover:rotate-45 p-2 text-2xl hover:bg-gray-400 hover:text-black'>
                     <FaTwitter />
                   </a>
@@ -114,7 +114,7 @@ export default function Home() {
 
             {/* image animation */}
             <div className='border hidden lg:block  border-white p-4 rounded-[20%] h-[25rem] w-[25rem] mt-[30px] ml-[50px]  shadow-black/10'>
-              <div className='hero-image  '> </div>
+              <div className='hero-image'> </div>
             </div>
           </div>
         </motion.div>

@@ -12,12 +12,12 @@ function About() {
                 <h2 className='text-xl text-[#afafaf] sm:text-4xl pt-4 md:pt-0 text-clip inline-block
                  '>About Me</h2>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-20 py-10 lg:py-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-20 py-5 md:py-10 lg:py-20'>
                <div
                className='flex justify-center relative mx-auto items-center group border rounded-xl bg-white w-64 sm:w-[350px] sm:p-4 p-2 shadow-[inset_0px_0px_10px] shadow-black/70'>               
                     <img 
                     className='border-2 border-white shadow-2xl shadow-black rounded-xl hover:scale-105 duration-700 ease-in-out'
-                    src={isMobile ? '/assets/owner.jpg' : '/assets/ownerdown.jpg'}
+                    src={isMobile ? '/assets/owner1.png' : '/assets/ownerdown.jpg'}
                     alt='Owner Image' />
               </div>
               

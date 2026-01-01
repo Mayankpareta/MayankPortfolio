@@ -50,7 +50,7 @@ const Slider = () => {
 
 
   return (
-    <div id='project' className="px-2 py-14 lg:px-5 g-gradient-to-r from-[#222222] to-[#000000] ">
+    <div id='project' className="px-2 md:py-14 py-5 lg:px-5 g-gradient-to-r from-[#222222] to-[#000000] ">
       <h2 className='text-xl text-[#afafaf] sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7 pb-10'>Projects</h2>
       <Swiper
       className=''

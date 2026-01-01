@@ -1,7 +1,7 @@
 import React from 'react';
 import { } from 'lucide-react';
 import LogoLoop from './LogoAnimation';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiMysql, SiC, SiGithub, SiGit, SiVsco, SiVercel, SiFigma } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiMysql, SiC, SiGithub, SiGit, SiVsco, SiVercel, SiFigma, SiAngular  } from 'react-icons/si';
 
 
 function Skills() {
@@ -36,6 +36,7 @@ function Skills() {
     { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
     { node: <SiNodedotjs />, title: "Node.js", href: "https://nodejs.org" },
     { node: <SiReact />, title: "React", href: "https://react.dev" },
+    { node: <SiAngular />, title: "Angular", href: "https://angular.io" },
     { node: <SiJavascript />, title: "JavaScript", href: "https://www.javascript.com" },
     { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
     { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
@@ -64,7 +65,7 @@ function Skills() {
         <div>
           <h2 className='text-xl py-10 text-[#afafaf] sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7'>Teck Stack</h2>
           <div 
-          className='flex items-center h-80'
+          className='flex items-center h-30 md:h-80'
           // className='grid grid-cols-1 md:grid-cols-3 pt-7 px-2 sm:px-4 lg:px-10 lg:gap-10 gap-5 '
           >
 

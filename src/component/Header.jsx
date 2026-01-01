@@ -48,8 +48,8 @@ export default function Header() {
     return (
         <header className="">
             <nav className="g-gradient-to-r  from-[#222222] to-[#000000] top-0 w-full flex 
-      items-center justify-between px-6 md:px-10 lg:px-20 py-2 transition-all duration-300 
-      ease-in-out fixed z-50 shadow-[0.5px_0px_12px] shadow-gray-600">
+            items-center justify-between px-6 md:px-10 lg:px-20 py-2 transition-all duration-300 
+            ease-in-out fixed z-50 shadow-[0.5px_0px_12px] shadow-gray-500">
 
                 {/* nav logo */}
                 <div className="flex flex-wrap justify-between items-center w-32">
@@ -65,17 +65,20 @@ export default function Header() {
                 {/*nav links */}
                 <div className='flex'>
                     <div className='hidden lg:flex items-center'>
-                        <ul className='flex space-x-1 lg:space-x-2 mr-6'>
+                        <ul className='flex mr-6 h-50'>
                             {navItem.map((item) => (
-                                <li key={item.href}>
+                                <li key={item.href} className={`!h-30 px-4 mx-2 py-1 ${isActive === item.href ?
+                                                "text-white border border-[#e7e7e7] rounded-[7px] shadow-[inset_0_1px_10px_rgba(255,255,255,0.7)]  to-white "
+                                                : ""
+                                            }`}>
                                     <a
                                         // to={`#${item.href}`}
                                         onClick={() => handlechangebg(item.href)}
                                         href={`#${item.href}`}
-                                        className={`relative text-base font-medium px-4 py-1.5 rounded-full transition-all duration-300
+                                        className={`py-1.5 relative text-base font-medium  transition-all duration-300
                                              ${isActive === item.href ?
-                                                "text-white bg-gradient-to-r from-gray-500 to-gray-800 "
-                                                : "text-gray-400 dark:text-gray-100 hover:text-white/70 "
+                                                ""
+                                                : "text-gray-400 dark:text-gray-100 hover:border-b-2 border-[#ffffff]"
                                             }`}
                                     >
                                         {item.label}
@@ -88,18 +91,14 @@ export default function Header() {
                     {/* nav resume */}
                     <div>
                         <a
-                            href=
-                            'https://drive.google.com/file/d/1VFatMXmJ8CwNmXOoQGqJ6diHHPgDxDUb/view?usp=drivesdk'
-                            target='_blank'
-                            className='group relative overflow-hidden flex items-center sm:mr-6 px-6 
-                py-2.5 shadow-[inset_1px_1px_6px_2px] hover:bg-slate-200 shadow-black/50 bg-white text-black rounded-full
-                transition-all duration-300'
-                        >
+                        href='https://drive.google.com/file/d/1VFatMXmJ8CwNmXOoQGqJ6diHHPgDxDUb/view?usp=drivesdk'
+                        target='_blank'
+                        className='group relative overflow-hidden flex items-center sm:mr-6 px-6 py-2.5 shadow-[inset_1px_1px_6px_2px] hover:bg-black hover:text-white hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,1)] shadow-black/50 bg-white text-black rounded-full transition-all duration-300 mr-2 '>
                             {/* <span
-                    className="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600
-                    to-pink-600 transform scale-x-0 group-hover:scale-x-100
-                    transition-transform duration-500 origin-left"
-                    ></span> */}
+                            className="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600
+                            to-pink-600 transform scale-x-0 group-hover:scale-x-100
+                            transition-transform duration-500 origin-left"
+                            ></span> */}
                             <span className='relative'>
                                 Resume
                             </span>

@@ -35,10 +35,10 @@ const ExperienceProject = [
 
 function Experience() {
   return (
-    <div id='experience' className='min-h-60 w-full py-10 lg:pt-0 g-gradient-to-r from-[#222222] to-[#000000]'>
+    <div id='experience' className='min-h-60 w-full md:py-10 pt-5 lg:pt-0 g-gradient-to-r from-[#222222] to-[#000000]'>
         <div className='w-[90%] mx-auto'>
             {/* title */}
-            <h3 className='text-center text-xl sm:text-4xl py-10 text-[#afafaf]'>Experience</h3>
+            <h3 className='text-center text-xl sm:text-4xl md:py-10 text-[#afafaf]'>Experience</h3>
             <div className=' rounded-xl mt-4 border border-gray-700 shadow-[inset_2px_0px_10px_rgba(256,256,256,0.5)]'>
               <div className='w-11/12 mx-auto py-14'>
               {/*feild and compeny name */}

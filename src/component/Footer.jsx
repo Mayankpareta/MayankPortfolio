@@ -1,15 +1,33 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Heart, ArrowUp } from "lucide-react";
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 
 export default function Footer() {
+    const [ isShowScroll, setIsShowScroll ] = useState(false)
+    const [ scrollNumber, isScrollNumber ] = useState(0)
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
     };
+
+    useEffect(() => {
+        const scroll = () => isScrollNumber(window.scrollY);
+        window.addEventListener("scroll" , scroll);
+        scroll();
+       return () => window.removeEventListener("scroll", scroll);
+    }, []);
+
+    useEffect(() => {
+        if(scrollNumber >= 700) {
+            setIsShowScroll(true)
+        }else {
+            setIsShowScroll(false)        
+        }   
+    }, [scrollNumber])
+
 
     return (
         <footer className="relative w-full mt-14 g-gradient-to-r from-[#222222] to-[#000000]  py-12 ">          
@@ -22,7 +40,7 @@ export default function Footer() {
             </div> */}
 
             {/* Scroll to top button */}
-            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 ">
+            {isShowScroll && <div className="fixed bottom-6 right-10 transform -translate-x-1/2 z-50">
                 <button
                     onClick={scrollToTop}
                     className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full shadow-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 group"
@@ -30,7 +48,7 @@ export default function Footer() {
                 >
                     <ArrowUp className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
                 </button>
-            </div>
+            </div>}
 
             <div className="max-w-6xl mx-auto px-4 md:px-8 relative ">
                 {/* Top section with logo and links */}

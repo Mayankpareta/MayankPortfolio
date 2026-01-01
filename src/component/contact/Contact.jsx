@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div id='contact' className='g-gradient-to-r from-[#222222] to-[#000000] py-0 lg:py-10 sm:px-5'>
         <div>
-            <h2 className='text-xl sm:text-3xl text-[#afafaf] md:text-4xl text-center text-clip py-14 '>Connect With Me</h2>
+            <h2 className='text-xl sm:text-3xl text-[#afafaf] md:text-4xl text-center text-clip py-5 md:py-14 '>Connect With Me</h2>
         </div>
         <div className='flex justify-center'>          
               <div className="g-gradient-to-r from-[#222222] to-[#000000] shadow-[inset_1px_1px_10px] shadow-white/50 border border-gray-700 rounded-xl mx-2 sm:mx-0 sm:w-5/6
@@ -22,7 +22,7 @@ function Contact() {
                   </div>
 
                   <div className="space-y-8 mb-12 ">
-                    <div className="flex items-center space-x-4 hover:border-b border-blue-600 h-12 pb-1">
+                    <div className="flex items-center space-x-4  h-12 pb-1">
                       <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center ">
                         <MapPin className="w-5 h-5" />
                       </div>
@@ -36,7 +36,7 @@ function Contact() {
                       </div>
                     </div>
 
-                    <div className="flex items-center space-x-4 hover:border-b border-blue-600 h-12 pb-1">
+                    <div className="flex items-center space-x-4 h-12 pb-1">
                         <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                             <Mail className="w-5 h-5" />
                         </div>
@@ -49,7 +49,7 @@ function Contact() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex items-center space-x-4 hover:border-b border-blue-600 h-12 pb-1">
+                    <div className="flex items-center space-x-4 h-12 pb-1">
                         <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                              <Phone className="w-5 h-5" />
                           </div>
