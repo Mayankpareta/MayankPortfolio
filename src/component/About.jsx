@@ -14,9 +14,9 @@ function About() {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-20 py-5 md:py-10 lg:py-20'>
                <div
-               className='flex justify-center relative mx-auto items-center group border rounded-xl bg-white w-64 sm:w-[350px] sm:p-4 p-2 shadow-[inset_0px_0px_10px] shadow-black/70'>               
+               className='flex justify-center relative mx-auto items-center group border rounded-xl w-64 sm:w-[350px] sm:p-4 p-2 shadow-[inset_0px_0px_10px] shadow-white/50'>               
                     <img 
-                    className='border-2 border-white shadow-2xl shadow-black rounded-xl hover:scale-105 duration-700 ease-in-out'
+                    className='border-2 shadow-sm shadow-white rounded-xl hover:scale-105 duration-700 ease-in-out'
                     src={isMobile ? '/assets/owner1.png' : '/assets/ownerdown.jpg'}
                     alt='Owner Image' />
               </div>

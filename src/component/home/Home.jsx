@@ -57,7 +57,7 @@ export default function Home() {
                 {/* frontend developer */}
                 <div className='h-10 '>
                   <TextType
-                    text={["Front-End Web Developer", "Next.Js  ,  React.Js  ,  Angular"]}
+                    text={["Software Engineer", "Laravel  ,  NextJs  ,  ReactJs  ,  Angular"]}
                     typingSpeed={75}
                     pauseDuration={1500}
                     showCursor={true}
@@ -74,25 +74,14 @@ export default function Home() {
                 <div className='flex justify-center lg:block'>
                   <a
                     href='#about'
-                    // className='group relative overflow-hidden flex items-center mr-6 px-6 py-2.5 md:w-32 shadow-[inset_1px_2px_6px_2px] hover:bg-slate-300 shadow-black/50 bg-white rounded-full transition-all duration-300 text-black  mt-6'
-                    className='py-5'
+                    className='group relative overflow-hidden flex items-center md:mr-6 px-6 py-2.5 w-44 md:w-32 shadow-[inset_1px_2px_6px_2px]  shadow-black/50 border border-[#969696]  rounded-full transition-all duration-300 text-white mt-0 md:mt-6 mb-3 md:mb-0'
+                    // className='py-5'
                   >
-                    {/* <span
-              className="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600
-                    to-pink-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-              ></span> */}
-                    {/* <span className='text-center'>
+                    <span className="absolute inset-0 w-full h-full border-b-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+                  ></span>
+                    <span className='text-center w-full'>
                       About me
-                    </span> */}
-
-                    <StarBorder
-                      as="button"
-                      className="custom-class"
-                      color="cyan"
-                      speed="5s"
-                    >
-                      About Me
-                    </StarBorder>
+                    </span>
                   </a>
                 </div>
                 <div className='w-full md:w-56 flex justify-around md:justify-between md:pt-10 lg:mx-0 mx-auto'>

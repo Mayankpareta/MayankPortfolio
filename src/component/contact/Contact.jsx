@@ -9,7 +9,7 @@ function Contact() {
         </div>
         <div className='flex justify-center'>          
               <div className="g-gradient-to-r from-[#222222] to-[#000000] shadow-[inset_1px_1px_10px] shadow-white/50 border border-gray-700 rounded-xl mx-2 sm:mx-0 sm:w-5/6
-               lg:w-3/5 p-5 lg:p-12 text-white">
+               lg:w-4/5 p-5 lg:p-12 text-white">
                 <div className="h-full flex flex-col">
                   <div className="mb-12">
                     <h3 className="text-2xl font-bold mb-6">
@@ -44,9 +44,9 @@ function Contact() {
                             <p className="text-sm text-purple-100">
                                 Email
                             </p>
-                            <p className="text-xs sm:text-base lg:text-lg">
+                            <a href="mailto:mayankpareta999@gmail.com" className="text-xs sm:text-base lg:text-lg">
                               mayankpareta999@gmail.com
-                            </p>
+                            </a>
                         </div>
                     </div>
                     <div className="flex items-center space-x-4 h-12 pb-1">
@@ -57,9 +57,9 @@ function Contact() {
                           <p className="text-sm text-purple-100">
                                Phone
                           </p>
-                          <p className="font-medium">
+                          <a href="tel:+917296992319" className="font-medium">
                               +91 7296992319
-                          </p>
+                          </a>
                           </div>
                      </div>
                    </div>

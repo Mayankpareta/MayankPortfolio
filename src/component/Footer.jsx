@@ -30,7 +30,7 @@ export default function Footer() {
 
 
     return (
-        <footer className="relative w-full mt-14 g-gradient-to-r from-[#222222] to-[#000000]  py-12 ">          
+        <footer className="relative w-full mt-5 md:mt-14 g-gradient-to-r from-[#222222] to-[#000000] py-5 md:py-12 ">          
 
             {/* Decorative Elements */}
             {/* <div className="absolute inset-0 overflow-hidden border-t border-gray-800">
@@ -40,10 +40,10 @@ export default function Footer() {
             </div> */}
 
             {/* Scroll to top button */}
-            {isShowScroll && <div className="fixed bottom-6 right-10 transform -translate-x-1/2 z-50">
+            {isShowScroll && <div className="fixed bottom-6 md:right-10 transform right-0 -translate-x-1/2 z-50">
                 <button
                     onClick={scrollToTop}
-                    className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full shadow-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 group"
+                    className="flex items-center justify-center md:w-12 md:h-12 h-10 w-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full shadow-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 group"
                     aria-label="Scroll to top"
                 >
                     <ArrowUp className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
@@ -54,10 +54,10 @@ export default function Footer() {
                 {/* Top section with logo and links */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-12 pb-10 border-b border-gray-700/50">
                     <div className="flex flex-col mb-8 md:mb-0">
-                        <h2 className="text-2xl font-bold text-white mb-3">
+                        <h2 className="text-2xl text-center md:text-left font-bold text-white mb-3">
                             Mayank Pareta
                         </h2>
-                        <p className="text-gray-400 max-w-md">
+                        <p className="text-gray-400 max-w-md text-center md:text-left">
                             Creating innovative web solutions with modern
                             technologies and aesthetic designs.
                         </p>
@@ -96,16 +96,16 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0 flex items-center">
                         <p className="text-gray-400 text-sm md:text-base">
-                            © 2024 Mayank Pareta. All rights reserved
+                            © 1999 Mayank Pareta. All rights reserved
                         </p>
-                        <span className="inline-flex items-center mx-2 text-gray-400">
+                        {/* <span className="inline-flex items-center mx-2 text-gray-400">
                             <span className="mx-1">•</span> Made with
                             <Heart className="w-4 h-4 text-red-500 mx-1 animate-pulse" />
                             in India
-                        </span>
+                        </span> */}
                     </div>
 
-                    <div className='w-56 flex justify-between pt-10 lg:mx-0 mx-auto'>
+                    <div className='w-56 flex justify-between lg:mx-0 mx-auto'>
                         <a href='https://x.com/pareta_m' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
                             <FaTwitter />
                         </a>

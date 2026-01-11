@@ -1,25 +1,30 @@
 import React from 'react'
 
 
-function card({link , image , alt , id , title , description}) {
+function card({liveLink, isRightImage, image , alt , id , title , description}) {
    
 
   return (
-    <div className='w-9/12 mx-auto border border-white/50 shadow-[inset_0px_1px_18px] shadow-white/40 rounded-xl px-2 sm:px-5 py-3 sm:py-12 bg-gradient-to-r from-[#000000] to-[#000000] mb-10'>
+    <div className='w-11/12 mx-auto rounded-xl px-2 sm:px-5 py-3 sm:py-16 bg-gradient-to-r from-[#000000] to-[#000000] md:mb-10'>
         <div>
-          <div className='group border border-gray-800 px-4 py-4 rounded-lg'>
-              <a key={id} href={link} target='_blank' >                  
-                  <div className='flex justify-center'>
+          <div className='group  px-4 py-4 rounded-lg'>
+              <div className='md:grid grid-cols-2'>                  
+                  <div className={`flex justify-center m-auto w-8/12 ${isRightImage ? 'order-last' : 'order-first' } `}>
                     <img
-                    className='duration-700 ease-in-out group-hover:scale-105'
+                    className={`duration-700 ease-in-out group-hover:scale-105  ${isRightImage ? 'md:rotate-12' : 'md:-rotate-12' } `}
                     src={image}  
                     alt={alt}/>
                   </div>
                   <div className='px-3 py-3'>                  
-                    <h2 className='text-base md:text-xl xl:text-2xl'>{title}</h2>
-                    <p className='text-[12px] text-gray-400'>{description}</p>  
+                    <h2 className='text-lg  md:text-xl text-center md:text-left xl:text-3xl pb-3'>{title}</h2>
+                    <p className='md:text-[15px] text-[12px] text-center md:text-left text-gray-400'>{description}</p>  
+                    <div className=' flex justify-center md:justify-start'>
+                      <button className='text-sm border border-gray-600 px-4 py-1 mt-2 rounded-md'>
+                        <a target='_blank' href={liveLink}>Live URL</a>
+                      </button>
+                    </div>
                   </div>
-              </a>            
+              </div>            
           </div>
         </div>    
     </div>

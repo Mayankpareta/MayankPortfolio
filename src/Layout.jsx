@@ -8,7 +8,7 @@ function Layout({ }) {
 
     return (
         <>
-            <div style={{ width: '100%', height: '293rem', position: 'relative', backgroundColor: '#000000' }}>
+            <div className="h-[352rem] md:h-[388rem]" style={{ width: '100%', position: 'relative', backgroundColor: '#000000' }}>
                 <Particles
                     particleColors={['#ffffff', '#ffffff']}
                     particleCount={800}
@@ -20,7 +20,7 @@ function Layout({ }) {
                     disableRotation={false}
                 />
             </div>
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 h-[350rem] md:h-[388rem]">
                 <Header />
                 <Content />
                 <Footer />
