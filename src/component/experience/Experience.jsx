@@ -37,7 +37,7 @@ const wurkbookExpirince = [
  
   {
     title: "1. Hospital Management System Software -",
-    description1: 'Wurk in Wurkbook HMS software as a software engineer. This software working in SAAS model.',
+    description1: 'Work in Wurkbook HMS software as a software engineer. This software working in SAAS model.',
     description2: 'HMS Software is use to manage all the activities of hospital like Patient Management , Staff Management , OPD Management , IPD Management , Appointments , Pharmacy , Inventory etc.',
     description3: 'Responsible for developing and maintaining various modules of the HMS software using technologies like Laravel , Bootstrap and SQL Server.',
     deploy: 'Deploy',
@@ -47,7 +47,7 @@ const wurkbookExpirince = [
   },  
   {
     title: "2. Gun House Management Software -",
-    description1: 'Wurk in Wurkbook Gunhouse software. Also this software working in SAAS model.',
+    description1: 'Work in Wurkbook Gunhouse software. Also this software working in SAAS model.',
     description2: 'Gunhouse Software is use to manage all the activities of Gun shop like Customer Management , Staff Management , Sales , Inventory etc.',
     description3: 'Responsible for developing and maintaining various modules of the Gunhouse software using technologies like Laravel , Bootstrap and SQL Server.',
     deploy: 'Deploy',
@@ -57,7 +57,7 @@ const wurkbookExpirince = [
   },
   {
     title: "3. Inventory Management Software -",
-    description1: 'Wurk in Wurkbook Inventory software. Also this software working in SAAS model.',
+    description1: 'Work in Wurkbook Inventory software. Also this software working in SAAS model.',
     description2: 'Inventory Software is use to manage all the activities of Inventory like Supplier Management , Product Management , Stock Management , Sales , Purchase , Dead Stock etc.',
     description3: 'Responsible for developing and maintaining various modules of the Inventory software using technologies like Laravel , Bootstrap and SQL Server.',
     deploy: 'Deploy',
