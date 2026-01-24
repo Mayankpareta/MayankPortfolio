@@ -18,6 +18,7 @@ function Contact() {
       )
       .then(() => {
       alert('Email sent successfully');
+      e.target.reset();
       })
       .catch((error) => {
         console.error(error);
@@ -36,7 +37,7 @@ function Contact() {
                   <div className="h-full flex flex-col text-center w-90% m-auto">
                     <div className="">
                       <h3 className="text-2xl font-bold mb-6">
-                          Contact Information
+                          Send Me Mail
                       </h3>
                       <p className="text-purple-100 mb-8">
                           Available for freelance projects and
