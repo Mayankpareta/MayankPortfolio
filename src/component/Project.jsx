@@ -54,7 +54,7 @@ const Slider = () => {
 
   return (
     <div id='project' className="px-2 md:py-14 py-5 lg:px-5 g-gradient-to-r from-[#222222] to-[#000000] ">
-      <h2 className='text-xl text-[#afafaf] sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7 pb-10'>Projects</h2>
+      <h2 className='text-xl  sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7 pb-10'>Projects</h2>
         {card.map((item, i) => (          
           
             <Card key={i} liveLink={item.liveLink} isRightImage={item.isImageRight} image={item.image} alt={item.alt} id={item.id} title={item.title} description={item.description}/>

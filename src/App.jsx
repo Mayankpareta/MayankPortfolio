@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css'
-import Home from './component/home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Layout';
+import UserContextProvider from './contextApi/Provider';
 
 
  const router = createBrowserRouter([
@@ -28,11 +28,11 @@ function App() {
 
 
   return (
-    <>
+    <UserContextProvider>
       
        <RouterProvider router = {router} />
        
-    </>
+    </UserContextProvider>
   )
 }
 

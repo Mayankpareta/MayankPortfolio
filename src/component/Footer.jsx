@@ -43,10 +43,10 @@ export default function Footer() {
             {isShowScroll && <div className="fixed bottom-6 md:right-10 transform right-0 -translate-x-1/2 z-50">
                 <button
                     onClick={scrollToTop}
-                    className="flex items-center justify-center md:w-12 md:h-12 h-10 w-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full shadow-lg hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 group"
+                    className="flex items-center justify-center md:w-12 md:h-12 h-10 w-10 bg-gradient-to-br from-[#fff] to-[#000] rounded-full shadow-lg hover:from-[#000] hover:to-[#fff] transition-all duration-300 group"
                     aria-label="Scroll to top"
                 >
-                    <ArrowUp className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
+                    <ArrowUp className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 </button>
             </div>}
 
@@ -54,10 +54,10 @@ export default function Footer() {
                 {/* Top section with logo and links */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-12 pb-10 border-b border-gray-700/50">
                     <div className="flex flex-col mb-8 md:mb-0">
-                        <h2 className="text-2xl text-center md:text-left font-bold text-white mb-3">
+                        <h2 className="text-2xl text-center md:text-left font-bold  mb-3">
                             Mayank Pareta
                         </h2>
-                        <p className="text-gray-400 max-w-md text-center md:text-left">
+                        <p className=" max-w-md text-center md:text-left">
                             Creating innovative web solutions with modern
                             technologies and aesthetic designs.
                         </p>
@@ -66,26 +66,26 @@ export default function Footer() {
                     <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                         <a
                             href="#experience"
-                            className="text-gray-300 hover:text-white transition-colors duration-300"
+                            className=" transition-colors duration-300"
                         >
                             Experience
                         </a>    
                         <a
                             href="#project"
-                            className="text-gray-300 hover:text-white transition-colors duration-300"
+                            className=" transition-colors duration-300"
                         >
                             Projects
                         </a>    
                         <a
                             href="#about"
-                            className="text-gray-300 hover:text-white transition-colors duration-300"
+                            className=" transition-colors duration-300"
                         >
                             About
                         </a>
                                                
                         <a
                             href="#contact"
-                            className="text-gray-300 hover:text-white transition-colors duration-300"
+                            className=" transition-colors duration-300"
                         >
                             Contact
                         </a>
@@ -95,7 +95,7 @@ export default function Footer() {
                 {/* Bottom section with copyright and social links */}
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0 flex items-center">
-                        <p className="text-gray-400 text-sm md:text-base">
+                        <p className=" text-sm md:text-base">
                             © 1999 Mayank Pareta. All rights reserved
                         </p>
                         {/* <span className="inline-flex items-center mx-2 text-gray-400">
@@ -106,16 +106,16 @@ export default function Footer() {
                     </div>
 
                     <div className='w-56 flex justify-between lg:mx-0 mx-auto'>
-                        <a href='https://x.com/pareta_m' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                        <a href='https://x.com/pareta_m' target='_blank' className='border border-[#616161] transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl  '>
                             <FaTwitter />
                         </a>
-                        <a href='https://www.linkedin.com/in/mayank-pareta-3b5107206/' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                        <a href='https://www.linkedin.com/in/mayank-pareta-3b5107206/' target='_blank' className='border border-[#616161] transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl  '>
                             <FaLinkedinIn />
                         </a>
-                        <a href='https://www.instagram.com/m_k_pareta/' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                        <a href='https://www.instagram.com/m_k_pareta/' target='_blank' className='border border-[#616161] transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl  '>
                             <FaInstagram />
                         </a>
-                        <a href='https://www.facebook.com/mayank.pareta.18' target='_blank' className='bg-black transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl hover:bg-gray-400 hover:text-black'>
+                        <a href='https://www.facebook.com/mayank.pareta.18' target='_blank' className='border border-[#616161] transition-all duration-500 hover:rotate-45 rounded-full p-2 text-2xl  '>
                             <FaFacebookF />
                         </a>
                     </div>

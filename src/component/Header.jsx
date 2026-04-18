@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
 import { MdOutlineDarkMode, MdOutlineWbSunny } from "react-icons/md";
@@ -9,12 +9,12 @@ import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { GrCode } from "react-icons/gr";
 import { MdFace } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import UserContext from '../contextApi/CreateContext';
 
 
 export default function Header() {
 
     const [isActive, setIsActive] = useState("home")
-    const [dark, isDark] = useState(true)
     const [isopenMenu, setIsOpenMenu] = useState(false)
 
     const navItem = [
@@ -40,7 +40,7 @@ export default function Header() {
                     }
                 });
             },
-            { threshold: 0.5 } 
+            { threshold: 0.2 } 
         );
 
         navItem.forEach((item) => {
@@ -51,15 +51,21 @@ export default function Header() {
         return () => observer.disconnect();
     }, []);
 
+    
+    const { theme , setTheme } = useContext(UserContext)
+
+    useEffect(() => {
+        if(!theme) return;
+        localStorage.setItem('theme', theme);
+    }, [theme])
+    
     const DarkMode = () => {
-        isDark(dark === true ? false : true)
+       setTheme(theme === 'light' ? 'dark' : 'light');
     }
 
     const openMenu = () => {
         setIsOpenMenu(isopenMenu === true ? false : true)
     }
-    
-   
 
 
     return (
@@ -71,11 +77,20 @@ export default function Header() {
                 {/* nav logo */}
                 <div className="flex flex-wrap justify-between items-center w-32">
                     <Link to="/" className="flex items-center opacity-100">
+                    {theme == 'light' ? (  
+                        <img
+                            src='/assets/Logo.png'
+                            className=" h-12"
+                            alt="Logo"
+                        />
+                    ) :  ( 
                         <img
                             src='/assets/grayLogo.png'
                             className=" h-12"
                             alt="Logo"
                         />
+                    )}
+                       
                     </Link>
                 </div>
 
@@ -86,7 +101,7 @@ export default function Header() {
                             <button
                             onClick={() => DarkMode()}
                             className='flex justify-center items-center text-2xl'>
-                            {dark === true ? <MdOutlineDarkMode className='' /> : <MdOutlineWbSunny />}
+                            {theme == 'light' ? <MdOutlineDarkMode /> : <MdOutlineWbSunny />}
                             </button>
                             <div
                             onClick={openMenu}
@@ -98,7 +113,7 @@ export default function Header() {
                             <div className='fixed inset-0 z-50 flex '>
                                 <div className="bg-black/70 w-full"
                                 onClick={() => setIsOpenMenu(false)}></div>
-                                <div className='relative top-0 right-0 w-full h-full bg-black text-white p-4 rounded-lg shadow-lg'>
+                                <div className='relative top-0 right-0 w-full h-full bg-black p-4 rounded-lg shadow-lg'>
                                     <div onClick={() => setIsOpenMenu(false)} className='flex justify-end text-2xl pb-3'>
                                     <RxCross2 />
                                     </div>
@@ -112,7 +127,7 @@ export default function Header() {
                                                     className={` relative text-base font-medium  transition-all duration-300
                                                 ${isActive === item.href ?
                                                     ""
-                                                    : "text-gray-400 dark:text-gray-100 hover:border-b-2 border-[#ffffff]"
+                                                    : " hover:border-b-2 border-[#ffffff]"
                                                 }`}
                                                 >
                                                     {item.label}
@@ -129,19 +144,16 @@ export default function Header() {
                     <div className='lg:flex items-center'>
                         <ul className='flex mr-6 h-50'>
                             {navItem.map((item) => (
-                                <li key={item.href} className={`!h-30 px-4 mx-2 py-1 ${isActive === item.href ?
-                                                "text-white border border-[#e7e7e7] rounded-[7px] shadow-[inset_0_1px_10px_rgba(255,255,255,0.7)]  to-white "
-                                                : ""
-                                            }`}>
+                                <li key={item.href} className={`!h-30 px-4 mx-2 py-1  transition-all duration-200
+                                 ${theme === 'light' ? isActive === item.href ? 'border-[#313131] border shadow-[inset_0_1px_10px_rgba(0,0,0,0.7)]  to-black rounded-[7px] ' : '' : isActive === item.href ? 'border-[#e7e7e7] border shadow-[inset_0_1px_10px_rgba(255,255,255,0.7)]  to-white rounded-[7px] ' : '' 
+                                }`}>
                                     <a
                                         // to={`#${item.href}`}
                                         onClick={() => handlechangebg(item.href)}
                                         href={`#${item.href}`}
-                                        className={`py-1.5 relative text-base font-medium  transition-all duration-300
-                                             ${isActive === item.href ?
-                                                ""
-                                                : "text-gray-400 dark:text-gray-100 hover:border-b-2 border-[#ffffff]"
-                                            }`}
+                                        className={`py-1.5 relative text-base font-medium 
+                                            ${theme === 'light' ? isActive === item.href ? '' : 'hover:border-b border-black' : isActive === item.href ? '' : 'hover:border-b border-white' 
+                                }`}
                                     >
                                        
                                         {item.label}
@@ -152,25 +164,26 @@ export default function Header() {
                     </div>
 
                     {/* nav resume */}
-                    <div className='hidden lg:flex'>
+                    <div className='hidden lg:flex '>
                         <a
                         href='https://drive.google.com/file/d/1VFatMXmJ8CwNmXOoQGqJ6diHHPgDxDUb/view?usp=drivesdk'
                         target='_blank'
-                        className='group relative overflow-hidden flex items-center sm:mr-6 px-6 py-2.5 shadow-[inset_1px_1px_6px_2px] hover:bg-black hover:text-white hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,1)] shadow-black/50 bg-white text-black rounded-full transition-all duration-300 mr-2 '>
-                            {/* <span
-                            className="absolute inset-0 w-full h-full bg-gradient-to-r from-indigo-600
-                            to-pink-600 transform scale-x-0 group-hover:scale-x-100
-                            transition-transform duration-500 origin-left"
-                            ></span> */}
+                        className={`${theme === 'light' ? 'hover:text-white' : 'text-black' } group relative overflow-hidden flex items-center sm:mr-6 px-6 py-2.5 shadow-[inset_1px_1px_6px_2px]   hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,1)] shadow-black/50 bg-white  rounded-full transition-all duration-300 mr-2 `}>
+                            <span
+                            className={`absolute inset-0 w-full h-full  transform scale-x-0 group-hover:scale-x-100
+                            transition-transform duration-500 origin-left ${theme === 'light' ? 'bg-gradient-to-r from-[#464646] to-[#cfcfcf]' : 'bg-gradient-to-r from-[#c4c4c4] to-[#6b6b6b]' }`}
+                            ></span>
                             <span className='relative'>
                                 Resume
                             </span>
                         </a>
+                        
                     </div>
                 <button
                 onClick={() => DarkMode()}
-                className='flex justify-center items-center text-2xl'>
-                    {dark === true ? <MdOutlineDarkMode className='' /> : <MdOutlineWbSunny />}
+                className='group relative flex justify-center items-center text-2xl'>
+                    {theme === 'light' ? <MdOutlineDarkMode className='' /> : <MdOutlineWbSunny />}
+                    <span className={`hidden group-hover:block absolute py-0.5 text-sm rounded opacity-80 top-12  px-1 ${theme === 'light' ? 'border border-[#696969] bg-[#a7a7a7] text-white' : 'border border-[#696969] bg-[#a7a7a7] text-white'}`}>Theme</span>
                 </button>
                 </div>                
                 )}

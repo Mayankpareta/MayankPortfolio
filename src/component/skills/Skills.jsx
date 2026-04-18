@@ -1,7 +1,7 @@
 import React from 'react';
 import { } from 'lucide-react';
 import LogoLoop from './LogoAnimation';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiMysql, SiC, SiGithub, SiGit, SiVsco, SiVercel, SiFigma, SiAngular  } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiNodedotjs, SiMongodb, SiMysql, SiC, SiGithub, SiGit, SiVsco, SiVercel, SiFigma, SiAngular ,SiLaravel, SiJquery   } from 'react-icons/si';
 
 
 function Skills() {
@@ -18,6 +18,7 @@ function Skills() {
   ]
 
   const BackEndSkillIcons = [
+    { src: "https://skillicons.dev/icons?i=laravel,theme=dark", alt: "Laravel" },
     { src: "https://skillicons.dev/icons?i=nodejs,theme=dark", alt: "NodeJS" },
     { src: "https://skillicons.dev/icons?i=mongodb,theme=dark", alt: "MongoDB" },
     { src: "https://skillicons.dev/icons?i=mysql,theme=dark", alt: "MySQL" },
@@ -33,12 +34,15 @@ function Skills() {
   ]
 
   const techLogos = [
+    { node: <SiLaravel />, title: "Laravel", href: "https://laravel.com" },
     { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
     { node: <SiNodedotjs />, title: "Node.js", href: "https://nodejs.org" },
+    { node: <SiVsco />, title: "VS Code", href: "https://code.visualstudio.com" },
     { node: <SiReact />, title: "React", href: "https://react.dev" },
     { node: <SiAngular />, title: "Angular", href: "https://angular.io" },
     { node: <SiJavascript />, title: "JavaScript", href: "https://www.javascript.com" },
     { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+    { node: <SiJquery />, title: "jQuery", href: "https://jquery.com" },
     { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
     { node: <SiBootstrap />, title: "Bootstrap", href: "https://getbootstrap.com" },
     { node: <SiHtml5 />, title: "HTML5", href: "https://www.w3.org/html/" },
@@ -63,7 +67,7 @@ function Skills() {
     <div className='w-full lg:pt-0 g-gradient-to-r from-[#222222] to-[#000000] '>
       <div className=''>
         <div>
-          <h2 className='text-xl py-10 text-[#afafaf] sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7'>Teck Stack</h2>
+          <h2 className='text-xl py-10  sm:text-3xl md:text-4xl text-center text-clip ml-3 md:ml-7'>Teck Stack</h2>
           <div 
           className='flex items-center h-30 md:h-80'
           // className='grid grid-cols-1 md:grid-cols-3 pt-7 px-2 sm:px-4 lg:px-10 lg:gap-10 gap-5 '
@@ -85,7 +89,7 @@ function Skills() {
             </div>
 
             {/* Front-End */}
-            {/* <div className='border border-gray-700 text-white min-h-20 rounded-xl sm:px-5 px-3 py-3'>
+            {/* <div className='border border-gray-700  min-h-20 rounded-xl sm:px-5 px-3 py-3'>
                       <span className='text-sm md:text-lg'>Front-End </span>
                       <ul className='grid grid-cols-4 md:grid-cols-3 gap-2 py-2 md:py-2 border-t border-gray-700 '>
                         {FrontEndSkillIcons.map((icon) => {
@@ -99,7 +103,7 @@ function Skills() {
                     </div> */}
 
             {/* Back-End */}
-            {/* <div className='border border-gray-800 text-white min-h-20 rounded-xl sm:px-5 px-3 py-3'>
+            {/* <div className='border border-gray-800  min-h-20 rounded-xl sm:px-5 px-3 py-3'>
                       <span className='text-sm md:text-lg'>Back-End </span>
                       <ul className='grid grid-cols-4 md:grid-cols-3 gap-2 py-2 md:py-2 border-t border-gray-800 '>
                         {BackEndSkillIcons.map((icon) => {
@@ -114,7 +118,7 @@ function Skills() {
                     </div> */}
 
             {/* Tools */}
-            {/* <div className='border border-gray-800  text-white min-h-20 rounded-xl sm:px-5 px-3 py-3'>
+            {/* <div className='border border-gray-800   min-h-20 rounded-xl sm:px-5 px-3 py-3'>
                       <span className='text-sm md:text-lg'> Developer / design Tools </span>
                       <ul className='grid grid-cols-4 md:grid-cols-3 gap-2 py-2 md:py-2 border-t border-gray-800 '>
                         {toolsSkillIcons.map((icon) => {
